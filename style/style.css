@@ -1,0 +1,464 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+/* ===========Declear the Global Class============== */
+    .message{
+        Display: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    .d-flex{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+    }
+    .line{
+        width: 5%;
+        margin-top: 8px;
+        height: 3px;
+        position: absolute;
+        right: 47%;
+        left: 47%;
+        border-radius:3px;
+        background-color: #6494ed;
+    }
+    input{
+        border-radius: 5px;
+        border:1px solid #000;
+    }
+    textarea{
+        border-radius: 5px;
+        border:1px solid #000;
+    }
+    input:focus{
+        outline: none;
+    }
+    textarea:focus{
+        outline: none;
+    }
+/* =======X===Declear the Global Class====X========= */
+
+/* ================Section Styleing======================= */
+
+    /* ============Navigation bar styleing============= */
+        .nav-bar{
+            padding: 15px 15px;
+            background-color: #FFFFFF;
+        }
+        .nav-menu{
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-brand{
+            padding: 0px 15px;
+        }
+        .nav-link{
+            padding: 0px 15px;
+        }
+        .nav-link a{
+            font-size: 18px;
+            color: #111111;
+            font-weight: bold;
+            text-transform:uppercase;
+            transition: 0.5s ease-in-out; 
+        }
+        .nav-link a:hover{
+            color:#6494ed;
+        }
+        .nav-brand a{
+            font-size:30px;
+            color: #111111;
+            font-weight: bold;
+        }
+        .nav-brand a p{
+            font-size: 25px;
+        }
+        .nav-items,.nav-social{
+            display: flex;
+        }
+        .toggle i{
+            font-size:28px;
+            color: #111111;
+            display:none
+        }
+    /* =======X====Navigation bar styleing=====X======= */
+
+    /*==========Home Section (Banner Styleing)===========  */
+        .home-img img{
+            width: 100%;
+            height: 85vh;
+        }
+        .caption{
+        position: absolute;
+        width: 100%;
+        height: 85vh;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #6494ed8e;
+        }
+        .caption h2{
+            font-size: 30px;
+            color:#FFFFFF;
+            text-transform: capitalize;
+        }
+        .caption h1{
+            font-size: 50px;
+            text-transform: uppercase;
+            color:#FFFFFF;
+        }
+        .caption h3{
+            font-size: 25px;
+            color:#FFFFFF;
+            text-transform: capitalize;
+        }
+    /*======X===Home Section (Banner Styleing)======X==== */
+
+    /* ==========About section style================== */
+        .about{
+            width: 100%;
+            margin-top: 50px;
+            padding: 0 15%;
+        }
+        .about-row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .about h2{
+            margin-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size:32px;
+            color: #444444;
+        }
+        .img-about img{
+            height: 400px;
+        }
+        .cotant-about p{
+            font-size: 28px;
+            font-weight: bold;
+            color: #1111119d;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+        .cotant-about p span{
+            font-size: 35px;
+        }
+    /* ======X===About section style=====X=========== */
+
+    /* ===============Blog Section=================== */
+        .blog{
+            width: 100%;
+            margin-top: 50px;
+            padding: 0 15px;
+        }
+        .blog h2{
+            margin-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size:32px;
+            color: #444444;
+        }
+        .blog-row{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+        .blog-card{
+            width: 33%;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+            margin: 10px 2px;
+        }
+        .blog-image img{
+            width: 100%;
+        }
+        .blog-information{
+            padding: 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.342);
+            cursor: pointer;
+        }
+        .blog-information h3{
+            font-size: 28px;
+            color:#111111;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .blog-information p{
+            margin-top: 8px;
+            font-size: 16px;
+            color:#444444;
+        }
+        .blog-update{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding:10px;
+            align-items: center;
+            cursor: pointer;
+        }
+        .blog-update p{
+            font-size: 14px;
+            color: #777777;
+            text-transform: capitalize;
+        }
+        .blog-update p i{
+            font-size: 16px;
+        }
+        .blog-update .blog-more .blog-more-btn{
+            padding:10px 20px;
+            background-color: #6494ed;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        .blog-update .blog-more .blog-more-btn:focus{
+            outline: none;
+        }
+    /* =======X=======Blog Section======X============= */
+
+    /* ==============testimonials====================== */
+        .testimonials{
+            width: 100%;
+            margin-top: 50px;
+        }
+        .testimonials h2{
+            margin-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size:32px;
+            color: #444444;
+        }
+        .testimonials-row{
+            margin-top: 10px;
+            display: flex;
+            padding: 50px;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+        .testimonials-row::-webkit-scrollbar {
+            display: none;
+          }
+        .testimonials-card-body{
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+            padding: 20px;
+            margin: 0px 10px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            border-radius: 10px;
+        }
+        .testimonials-card-body:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 4px 16px #6494ed;
+        }
+        .testimonials-person-information{
+            margin-top:10px;
+            display: flex;
+            flex-direction:column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .testimonials-person-information .person-image img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .prson-name h3{
+            font-size: 18px;
+            color: #111111;
+            text-transform: capitalize;
+        }
+        .testimonials-person-experiance{
+            margin-top: 10px;
+        }
+        .testimonials-person-experiance p{
+            font-size: 16px;
+            color: #444444;
+        }
+        .testimonials-person-experiance p span{
+            font-size: 18px;
+            color: #444444;
+        }
+    /* =========X====testimonials========X============= */
+
+    /* =================Contact Us====================== */
+        .contact-us{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contact-us h2{
+            margin-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size:32px;
+            color: #444444;
+        }
+        .countact-row{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+        .countact-location-information{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .countact-location-information i{
+            font-size: 32px;
+            color: #6494ed;
+            cursor: pointer;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+            padding: 10px;
+            border-radius: 50%;
+        }
+        .countact-location-information h3{
+            color:#777777;
+            font-size: 20px;
+        }
+        .countact-location-information p{
+            color: #444444;
+            font-size:14px;
+        }
+        .countact-address{
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+            padding: 40px;
+        }
+        .other-countact-detailes{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-mail{
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+            padding: 40px;
+        }
+        .countact-phone{
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+            padding: 40px;
+            margin-left:10px;
+        }
+        .countact-form{
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+            padding: 30px;
+            margin-left: 15px;
+        }
+        .cotact-input{
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-in-name input{
+            padding: 10px;
+        }
+        .contact-in-email input{
+            padding: 10px;
+            margin-left: 10px;
+        }
+        .contact-subject input{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .contact-message textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .submit{
+            text-align: center;
+        }
+        .countact-submit-btn{
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #6494ed;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .countact-submit-btn:focus{
+            outline: none;
+        }
+    /* ====X============Countact Us===================== */
+
+    /* ===================Footer======================== */
+        .footer{
+            width: 100%;
+            margin-top: 10px;
+        }
+        .footer-row{
+            margin-top: 10px;
+            padding: 50px;
+            background-color: #1b1b1b;
+            text-align: center;
+            color: #FFFFFF;
+            border-bottom: 1px solid #ccc;
+        }
+        .footer-row h2{
+            font-size: 38px;
+        }
+        .footer-row h3{
+            font-size: 25px;color: #6494ed;
+        }
+        .developer{
+            padding:10px;
+            background-color: #111111;
+            display: flex;
+            justify-content:space-around;
+            align-items:center;
+        }
+        .develop-name p{
+            color: #ffffff;
+        }
+        .develop-name p span{
+            color: #6494ed;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        .developer-contact a{
+            padding:10px;
+            font-size:20px;
+            color: #6494ed;
+        }
+    /* ======X=============Footer=====X================= */
+/* ========X=======Section Styleing===============X======= */
+
+
+
+
+    
+
+    
+
+   
+
